@@ -10,6 +10,7 @@ export function Process() {
       description:
         'Partners bring us vetted, high-potential asset acquisition opportunities that meet our conservative criteria.',
       bg: 'from-blue-600 to-blue-800',
+      hoverBg: 'from-pink-500 to-pink-700', // contrasting hover color
     },
     {
       icon: Handshake,
@@ -17,6 +18,7 @@ export function Process() {
       description:
         'We conduct thorough analysis. Upon approval, we structure a partnership agreement with clear 50/50 terms.',
       bg: 'from-emerald-600 to-emerald-800',
+      hoverBg: 'from-purple-500 to-purple-700', // contrasting hover color
     },
     {
       icon: Building2,
@@ -24,6 +26,7 @@ export function Process() {
       description:
         'Hundred Venture PLC provides 100% of the required capital to close the transaction securely.',
       bg: 'from-indigo-600 to-indigo-800',
+      hoverBg: 'from-orange-400 to-orange-600', // contrasting hover color
     },
     {
       icon: Banknote,
@@ -31,6 +34,7 @@ export function Process() {
       description:
         "Partners manage the asset's performance, and profits are distributed equally on a recurring basis.",
       bg: 'from-amber-600 to-amber-800',
+      hoverBg: 'from-teal-400 to-teal-600', // contrasting hover color
     },
   ];
 
@@ -72,7 +76,13 @@ export function Process() {
               className="group"
             >
               <div
-                className={`relative h-full rounded-2xl bg-gradient-to-br ${step.bg} p-8 shadow-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl`}
+                className={`
+                  relative h-full rounded-2xl p-8 shadow-xl transition-all duration-500
+                  bg-gradient-to-br ${step.bg}
+                  hover:bg-gradient-to-br ${step.hoverBg}
+                  group-hover:-translate-y-2
+                  group-hover:shadow-2xl
+                `}
               >
                 {/* Icon */}
                 <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-sm shadow-lg transition-transform duration-500 group-hover:scale-110">
