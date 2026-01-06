@@ -71,7 +71,7 @@ export function Hero() {
           ease: 'easeOut'
         }} className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-emerald-500/20 rounded-full blur-3xl transform scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-b rounded-full blur-3xl transform scale-110" />
               <img src="/100_Vebture_Logo.png" alt="Hundred Venture PLC Logo" className="relative w-full max-w-lg h-auto drop-shadow-2xl" />
             </div>
           </motion.div>
