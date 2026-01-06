@@ -87,11 +87,6 @@ export function Hero() {
           >
             <div className="relative">
               <div className="absolute inset-0 rounded-full blur-3xl scale-110 bg-gradient-to-b from-emerald-500/30 to-blue-500/20" />
-              <img
-                src="/100_Vebture_Logo.png"
-                alt="Hundred Venture PLC Logo"
-                className="relative w-full max-w-lg h-auto drop-shadow-2xl"
-              />
             </div>
           </motion.div>
         </div>
