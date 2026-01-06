@@ -6,25 +6,25 @@ export function Team() {
     name: 'James Richardson',
     title: 'Founder & CEO',
     bio: '25+ years in private equity and asset management. Previously led acquisitions at Goldman Sachs.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
+    image: '/t1.jpeg',
     linkedin: '#'
   }, {
     name: 'Sarah Chen',
     title: 'Managing Partner',
     bio: 'Former VP at BlackRock. Specializes in conservative yield strategies and risk management.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
+    image: '/t2.jpeg',
     linkedin: '#'
   }, {
     name: 'Michael Foster',
     title: 'Chief Investment Officer',
     bio: '20 years structuring long-term asset deals. Expert in commercial real estate and infrastructure.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces',
+    image: '/t3.jpeg',
     linkedin: '#'
   }, {
     name: 'Emily Rodriguez',
     title: 'Head of Partnerships',
     bio: 'Builds strategic relationships with sponsors and operators. Background in investment banking.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
+    image: '/t4.jpeg',
     linkedin: '#'
   }];
   return <section id="team" className="py-32 bg-brand-navy-950 relative overflow-hidden">
