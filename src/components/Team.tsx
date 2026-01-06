@@ -3,28 +3,28 @@ import { motion } from 'framer-motion';
 import { Linkedin } from 'lucide-react';
 export function Team() {
   const teamMembers = [{
-    name: 'James Richardson',
+    name: 'Muhammad Kareem',
     title: 'Founder & CEO',
     bio: '25+ years in private equity and asset management. Previously led acquisitions at Goldman Sachs.',
-    image: '/t1.jpeg',
+    image: '/t4.jpeg',
     linkedin: '#'
   }, {
-    name: 'Sarah Chen',
+    name: 'Fatima Malik',
     title: 'Managing Partner',
     bio: 'Former VP at BlackRock. Specializes in conservative yield strategies and risk management.',
-    image: '/t2.jpeg',
-    linkedin: '#'
-  }, {
-    name: 'Michael Foster',
-    title: 'Chief Investment Officer',
-    bio: '20 years structuring long-term asset deals. Expert in commercial real estate and infrastructure.',
     image: '/t3.jpeg',
     linkedin: '#'
   }, {
-    name: 'Emily Rodriguez',
+    name: 'Yusuf Ibrahim',
+    title: 'Chief Investment Officer',
+    bio: '20 years structuring long-term asset deals. Expert in commercial real estate and infrastructure.',
+    image: '/t2.jpeg',
+    linkedin: '#'
+  }, {
+    name: 'Aisha Rodriguez',
     title: 'Head of Partnerships',
     bio: 'Builds strategic relationships with sponsors and operators. Background in investment banking.',
-    image: '/t4.jpeg',
+    image: '/t1.jpeg',
     linkedin: '#'
   }];
   return <section id="team" className="py-32 bg-brand-navy-950 relative overflow-hidden">
