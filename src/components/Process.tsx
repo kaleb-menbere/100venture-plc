@@ -8,32 +8,32 @@ export function Process() {
       title: 'Opportunity Identification',
       description:
         'Partners bring us vetted, high-potential asset acquisition opportunities that meet our conservative criteria.',
-      bg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
-      hoverBg: 'from-[#299963] to-[#299963]/80', // contrasting hover color
+      bg: 'from-[#353434] to-[#353434]/80',
+      hoverBg: 'from-[#2a2a2a] to-[#2a2a2a]/80',
     },
     {
       icon: Handshake,
       title: 'Due Diligence & Agreement',
       description:
         'We conduct thorough analysis. Upon approval, we structure a partnership agreement with clear 50/50 terms.',
-      bg: 'from-[#299963] to-[#299963]/80',
-      hoverBg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
+      bg: 'from-[#0b553d] to-[#0b553d]/80',
+      hoverBg: 'from-[#084431] to-[#084431]/80',
     },
     {
       icon: Building2,
       title: 'Acquisition & Funding',
       description:
         'Hundred Venture PLC provides 100% of the required capital to close the transaction securely.',
-      bg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
-      hoverBg: 'from-[#299963] to-[#299963]/80',
+      bg: 'from-[#299963] to-[#299963]/80',
+      hoverBg: 'from-[#1f7a4e] to-[#1f7a4e]/80',
     },
     {
       icon: Banknote,
       title: 'Management & Profit Share',
       description:
         "Partners manage the asset's performance, and profits are distributed equally on a recurring basis.",
-      bg: 'from-[#299963] to-[#299963]/80',
-      hoverBg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
+      bg: 'from-[#bf9000] to-[#bf9000]/80',
+      hoverBg: 'from-[#9f7700] to-[#9f7700]/80',
     },
   ];
 
@@ -43,7 +43,7 @@ export function Process() {
       className="relative overflow-hidden bg-brand-navy-900 py-24 sm:py-28 lg:py-32"
     >
       {/* Background Accent */}
-      <div className="pointer-events-none absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-[#D3AF5E]/10 to-transparent" />
+      <div className="pointer-events-none absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-[#bf9000]/10 to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -56,7 +56,16 @@ export function Process() {
         >
           <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-white leading-tight">
             How We Work{' '}
-            <span className="text-[#D3AF5E] italic font-normal">Together</span>
+            <span
+  className="
+    italic font-normal
+    bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+    bg-clip-text text-transparent
+  "
+>
+  Together
+</span>
+
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-slate-400 font-light">
             A streamlined path from opportunity to ownership.
@@ -97,7 +106,7 @@ export function Process() {
                   {step.description}
                 </p>
 
-                {/* Subtle Inner Glow */}
+                {/* Inner Border */}
                 <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10" />
               </div>
             </motion.div>

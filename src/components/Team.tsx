@@ -46,7 +46,16 @@ export function Team() {
           className="text-center mb-20"
         >
           <h2 className="text-5xl md:text-6xl font-serif font-semibold text-white mb-6 leading-tight">
-            Leadership <span className="text-[#D3AF5E] italic font-normal">Team</span>
+            Leadership <span
+  className="
+    italic font-normal
+    bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+    bg-clip-text text-transparent
+  "
+>
+  Team
+</span>
+
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light">
             Decades of combined experience in conservative asset management and

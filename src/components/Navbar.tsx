@@ -32,18 +32,17 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <a href="#" className="flex items-center gap-3 group">
-              <img
-                src="/100_Vebture_Logo_(2).png"
-                alt="Hundred Venture PLC"
-                className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
-              />
-              <span className="font-serif font-semibold text-xl tracking-tight text-white">
-                Hundred Venture PLC
-              </span>
-            </a>
-          </div>
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-3 group">
+            <img
+              src="/100_Vebture_Logo_(2).png"
+              alt="Hundred Venture PLC"
+              className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
+            <span className="font-serif font-semibold text-xl tracking-tight text-white">
+              Hundred Venture PLC
+            </span>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-10">
@@ -56,6 +55,8 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
+
+            {/* ✅ Uses shared Button component */}
             <Button
               variant="secondary"
               onClick={() =>
@@ -63,7 +64,6 @@ export function Navbar() {
                   .getElementById('contact')
                   ?.scrollIntoView({ behavior: 'smooth' })
               }
-              className="bg-gradient-to-r from-[#D3AF5E] to-[#299963] hover:from-[#D3AF5E]/90 hover:to-[#299963]/90"
             >
               Partner With Us
             </Button>
@@ -101,9 +101,11 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
+
+              {/* ✅ Same Button here too */}
               <Button
                 variant="secondary"
-                className="w-full bg-gradient-to-r from-[#D3AF5E] to-[#299963] hover:from-[#D3AF5E]/90 hover:to-[#299963]/90"
+                className="w-full"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   document

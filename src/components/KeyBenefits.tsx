@@ -32,9 +32,16 @@ export function KeyBenefits() {
           >
             <h2 className="text-5xl md:text-6xl font-serif font-semibold mb-8 leading-tight">
               Why Partner With{' '}
-              <span className="italic font-normal text-[#D3AF5E]">
-                Hundred Venture
-              </span>
+<span
+  className="
+    italic font-normal
+    bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+    bg-clip-text text-transparent
+  "
+>
+  Hundred Venture
+</span>
+
               ?
             </h2>
 

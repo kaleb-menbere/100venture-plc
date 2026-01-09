@@ -10,9 +10,16 @@ export function ContactSection() {
           <div>
             <h2 className="text-5xl md:text-6xl font-serif font-semibold text-white mb-8 leading-tight">
               Start a{' '}
-              <span className="text-[#D3AF5E] italic font-normal">
-                Conversation
-              </span>
+             <span
+              className="
+                italic font-normal
+                bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+                bg-clip-text text-transparent
+              "
+            >
+              Conversation
+            </span>
+
             </h2>
             <p className="text-xl text-slate-400 mb-16 font-light leading-relaxed">
               We are always looking for new partners with high-quality

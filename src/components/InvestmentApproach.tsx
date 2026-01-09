@@ -49,9 +49,16 @@ export function InvestmentApproach() {
           >
             <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-white">
               A Disciplined Investment{' '}
-              <span className="italic font-normal text-[#D3AF5E]">
-                Philosophy
-              </span>
+            <span
+              className="
+                italic font-normal
+                bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+                bg-clip-text text-transparent
+              "
+            >
+              Philosophy
+            </span>
+
             </h2>
             <p className="text-xl text-slate-400 font-light">
               At Hundred Venture PLC, we believe in tangible assets and

@@ -40,9 +40,16 @@ export function Hero() {
 
             <h1 className="text-6xl lg:text-7xl font-serif font-semibold text-white leading-[1.1] mb-8">
               Secure, Passive Income Through{' '}
-              <span className="italic font-normal text-[#D3AF5E]">
-                Strategic Partnerships
-              </span>
+            <span
+              className="
+                italic font-normal
+                bg-gradient-to-r from-[#D3AF5E] to-[#299963]
+                bg-clip-text text-transparent
+              "
+            >
+              Strategic Partnerships
+            </span>
+
             </h1>
 
             <p className="text-xl text-slate-300 mb-12 max-w-lg leading-relaxed font-light">
