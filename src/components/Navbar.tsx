@@ -1,16 +1,13 @@
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -22,6 +19,14 @@ export function Navbar() {
     { name: 'Team', href: '#team' },
   ];
 
+  const scrollTo = (href: string) => {
+    const el = document.getElementById(href.replace('#', ''));
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileOpen(false); // close mobile menu
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -30,95 +35,62 @@ export function Navbar() {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <img
-              src="/100_Vebture_Logo_(2).png"
-              alt="Hundred Venture PLC"
-              className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
-            <span className="font-serif font-semibold text-xl tracking-tight text-white">
-              Hundred Venture PLC
-            </span>
-          </a>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-3">
+          <img
+            src="/100_Vebture_Logo_(2).png"
+            alt="Hundred Venture PLC"
+            className="h-10 w-auto"
+          />
+          <span className="font-serif font-semibold text-xl text-white">
+            Hundred Venture PLC
+          </span>
+        </a>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-10">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors duration-300 tracking-wide"
-              >
-                {link.name}
-              </a>
-            ))}
-
-            {/* ✅ Uses shared Button component */}
-            <Button
-              variant="secondary"
-              onClick={() =>
-                document
-                  .getElementById('contact')
-                  ?.scrollIntoView({ behavior: 'smooth' })
-              }
-            >
-              Partner With Us
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navLinks.map((link) => (
             <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white p-2"
+              key={link.name}
+              onClick={() => scrollTo(link.href)}
+              className="text-sm text-slate-400 hover:text-white transition"
             >
-              {isMobileMenuOpen ? <X /> : <Menu />}
+              {link.name}
             </button>
-          </div>
+          ))}
+          <Button variant="secondary" onClick={() => scrollTo('#contact')}>
+            Partner With Us
+          </Button>
+        </div>
+
+        {/* Mobile Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="text-white p-2">
+            {isMobileOpen ? <X /> : <Menu />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-brand-navy-950/98 backdrop-blur-xl border-t border-white/10 overflow-hidden shadow-luxury"
-          >
-            <div className="px-4 py-8 space-y-6">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-base font-medium text-slate-400 hover:text-white transition-colors"
-                >
-                  {link.name}
-                </a>
-              ))}
-
-              {/* ✅ Same Button here too */}
-              <Button
-                variant="secondary"
-                className="w-full"
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  document
-                    .getElementById('contact')
-                    ?.scrollIntoView({ behavior: 'smooth' });
-                }}
+      {isMobileOpen && (
+        <div className="md:hidden bg-brand-navy-950/95 backdrop-blur-xl border-t border-white/10">
+          <div className="flex flex-col px-4 py-6 space-y-4">
+            {navLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => scrollTo(link.href)}
+                className="text-left text-base text-slate-400 hover:text-white transition"
               >
-                Partner With Us
-              </Button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                {link.name}
+              </button>
+            ))}
+            <Button variant="secondary" className="w-full" onClick={() => scrollTo('#contact')}>
+              Partner With Us
+            </Button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
