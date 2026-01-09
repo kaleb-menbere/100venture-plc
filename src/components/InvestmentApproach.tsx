@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Scale, Lock } from 'lucide-react';
 
@@ -10,8 +9,8 @@ export function InvestmentApproach() {
       description:
         'We prioritize capital preservation above all else. Our assets are selected for their stability and consistent performance over decades, not days.',
       image: '/p1.jpeg',
-      gradient: 'from-emerald-600/20 to-emerald-900/40',
-      border: 'hover:border-emerald-500/40',
+      gradient: 'from-[#299963]/20 to-[#299963]/40',
+      border: 'hover:border-[#299963]/40',
     },
     {
       icon: TrendingUp,
@@ -19,8 +18,8 @@ export function InvestmentApproach() {
       description:
         'We focus on assets that provide secure, passive income streams. We are not looking for quick flips; we are building generational wealth.',
       image: '/p2.jpeg',
-      gradient: 'from-blue-600/20 to-blue-900/40',
-      border: 'hover:border-blue-500/40',
+      gradient: 'from-[#D3AF5E]/20 to-[#D3AF5E]/40',
+      border: 'hover:border-[#D3AF5E]/40',
     },
     {
       icon: Scale,
@@ -28,8 +27,8 @@ export function InvestmentApproach() {
       description:
         "We don't just lend money; we partner with you. By providing 100% of the capital, we align our success directly with yours through shared equity.",
       image: '/p4.jpeg',
-      gradient: 'from-purple-600/20 to-purple-900/40',
-      border: 'hover:border-purple-500/40',
+      gradient: 'from-[#299963]/20 to-[#299963]/40',
+      border: 'hover:border-[#299963]/40',
     },
   ];
 
@@ -39,6 +38,7 @@ export function InvestmentApproach() {
       className="relative overflow-hidden bg-brand-navy-900 py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
         <div className="mx-auto mb-20 max-w-3xl text-center">
           <motion.div
@@ -49,7 +49,7 @@ export function InvestmentApproach() {
           >
             <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-white">
               A Disciplined Investment{' '}
-              <span className="text-luxury italic font-normal">
+              <span className="italic font-normal text-[#D3AF5E]">
                 Philosophy
               </span>
             </h2>
@@ -74,7 +74,7 @@ export function InvestmentApproach() {
               <div
                 className={`relative flex h-full min-h-[420px] flex-col justify-between rounded-2xl border border-white/10 bg-gradient-to-br ${feature.gradient} p-8 backdrop-blur-sm transition-all duration-500 ${feature.border}`}
               >
-                {/* TEXT CONTENT (DEFAULT VIEW) */}
+                {/* TEXT CONTENT */}
                 <div className="transition-opacity duration-500 group-hover:opacity-0">
                   <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 shadow-lg">
                     <feature.icon className="h-7 w-7 text-white" />
@@ -89,7 +89,7 @@ export function InvestmentApproach() {
                   </p>
                 </div>
 
-                {/* IMAGE (HOVER VIEW) */}
+                {/* IMAGE (HOVER) */}
                 <div className="pointer-events-none absolute inset-0 opacity-0 transition-all duration-700 group-hover:opacity-100">
                   <img
                     src={feature.image}

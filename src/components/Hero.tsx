@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/Button';
 import { ShieldCheck } from 'lucide-react';
@@ -13,14 +12,14 @@ export function Hero() {
         style={{ backgroundImage: "url('/hero.jpeg')" }}
       />
 
-      {/* Dark Overlay */}
+      {/* Dark Overlay (unchanged) */}
       <div className="absolute inset-0 bg-brand-navy-950/80" />
 
-      {/* Luxury Gradient Accents */}
+      {/* Luxury Gradient Accents (UPDATED COLORS) */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#299963]/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#D3AF5E]/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-[#299963]/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,8 +31,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-emerald-500/30 text-white text-sm font-medium mb-8 shadow-sm backdrop-blur-sm">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-[#D3AF5E]/30 text-white text-sm font-medium mb-8 shadow-sm backdrop-blur-sm">
+              <ShieldCheck className="w-4 h-4 text-[#D3AF5E]" />
               <span className="tracking-wide">
                 Conservative. Secure. Long-term.
               </span>
@@ -41,7 +40,7 @@ export function Hero() {
 
             <h1 className="text-6xl lg:text-7xl font-serif font-semibold text-white leading-[1.1] mb-8">
               Secure, Passive Income Through{' '}
-              <span className="text-luxury italic font-normal">
+              <span className="italic font-normal text-[#D3AF5E]">
                 Strategic Partnerships
               </span>
             </h1>
@@ -78,7 +77,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Logo */}
+          {/* Logo Glow (UPDATED COLORS) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -86,7 +85,7 @@ export function Hero() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute inset-0 rounded-full blur-3xl scale-110 bg-gradient-to-b from-emerald-500/30 to-blue-500/20" />
+              <div className="absolute inset-0 rounded-full blur-3xl scale-110 bg-gradient-to-b from-[#D3AF5E]/30 to-[#299963]/20" />
             </div>
           </motion.div>
         </div>

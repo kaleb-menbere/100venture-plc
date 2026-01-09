@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FileSearch, Handshake, Building2, Banknote } from 'lucide-react';
 
@@ -9,32 +8,32 @@ export function Process() {
       title: 'Opportunity Identification',
       description:
         'Partners bring us vetted, high-potential asset acquisition opportunities that meet our conservative criteria.',
-      bg: 'from-blue-600 to-blue-800',
-      hoverBg: 'from-pink-500 to-pink-700', // contrasting hover color
+      bg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
+      hoverBg: 'from-[#299963] to-[#299963]/80', // contrasting hover color
     },
     {
       icon: Handshake,
       title: 'Due Diligence & Agreement',
       description:
         'We conduct thorough analysis. Upon approval, we structure a partnership agreement with clear 50/50 terms.',
-      bg: 'from-emerald-600 to-emerald-800',
-      hoverBg: 'from-purple-500 to-purple-700', // contrasting hover color
+      bg: 'from-[#299963] to-[#299963]/80',
+      hoverBg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
     },
     {
       icon: Building2,
       title: 'Acquisition & Funding',
       description:
         'Hundred Venture PLC provides 100% of the required capital to close the transaction securely.',
-      bg: 'from-indigo-600 to-indigo-800',
-      hoverBg: 'from-orange-400 to-orange-600', // contrasting hover color
+      bg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
+      hoverBg: 'from-[#299963] to-[#299963]/80',
     },
     {
       icon: Banknote,
       title: 'Management & Profit Share',
       description:
         "Partners manage the asset's performance, and profits are distributed equally on a recurring basis.",
-      bg: 'from-amber-600 to-amber-800',
-      hoverBg: 'from-teal-400 to-teal-600', // contrasting hover color
+      bg: 'from-[#299963] to-[#299963]/80',
+      hoverBg: 'from-[#D3AF5E] to-[#D3AF5E]/80',
     },
   ];
 
@@ -44,7 +43,7 @@ export function Process() {
       className="relative overflow-hidden bg-brand-navy-900 py-24 sm:py-28 lg:py-32"
     >
       {/* Background Accent */}
-      <div className="pointer-events-none absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-blue-500/10 to-transparent" />
+      <div className="pointer-events-none absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-[#D3AF5E]/10 to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -57,7 +56,7 @@ export function Process() {
         >
           <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-white leading-tight">
             How We Work{' '}
-            <span className="text-luxury italic font-normal">Together</span>
+            <span className="text-[#D3AF5E] italic font-normal">Together</span>
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-slate-400 font-light">
             A streamlined path from opportunity to ownership.
