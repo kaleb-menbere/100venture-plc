@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-brand-navy-900 text-slate-400 py-12 border-t border-brand-navy-800">
+    <footer className="bg-[#e1f2e0] text-gray-700 py-12 border-t border-gray-300/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 mb-8 items-start">
           
@@ -10,9 +10,9 @@ export function Footer() {
               <img
                 src="/100_Vebture_Logo.png"
                 alt="Hundred Venture PLC"
-                className="h-12 w-auto brightness-0 invert opacity-90"
+                className="h-12 w-auto"
               />
-              <span className="font-serif font-bold text-2xl text-white">
+              <span className="font-serif font-bold text-2xl text-gray-900">
                 Hundred Venture PLC
               </span>
             </div>
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-brand-navy-800 text-center text-xs text-slate-400">
+        <div className="pt-8 border-t border-gray-300/50 text-center text-xs text-gray-600">
           <p>
             &copy; {new Date().getFullYear()} Hundred Venture PLC. All rights
             reserved.

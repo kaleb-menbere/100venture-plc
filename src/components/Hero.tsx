@@ -4,7 +4,7 @@ import { ShieldCheck } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
       
       {/* Background Image */}
       <div

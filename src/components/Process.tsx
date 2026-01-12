@@ -40,7 +40,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-brand-navy-900 py-24 sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#e1f2e0] py-24 sm:py-28 lg:py-32"
     >
       {/* Background Accent */}
       <div className="pointer-events-none absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-[#bf9000]/10 to-transparent" />
@@ -54,7 +54,7 @@ export function Process() {
           transition={{ duration: 0.8 }}
           className="mb-20 text-center"
         >
-          <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-white leading-tight">
+          <h2 className="mb-6 text-5xl md:text-6xl font-serif font-semibold text-black leading-tight">
             How We Work{' '}
             <span
   className="
