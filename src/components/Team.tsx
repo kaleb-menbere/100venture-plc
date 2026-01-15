@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'; 
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Building, Globe, Award, Users, Target, Briefcase, Star, TrendingUp, Shield } from 'lucide-react';
+import { ChevronDown, ChevronUp, Building, Globe, Award, Users, Target, Briefcase, Star } from 'lucide-react';
 
 export function Team() { 
   const teamMembers = [
@@ -278,23 +278,6 @@ Equity Capital Markets professional with extensive experience developing and man
                         </div>
                       )}
                       
-                      {/* Projects List - For Vice Chairman */}
-                      {member.projectsList && member.projectsList.length > 0 && (
-                        <div>
-                          <h4 className="text-lg font-serif font-semibold text-white mb-4 flex items-center gap-2">
-                            <TrendingUp className="w-5 h-5 text-[#d4af37]" />
-                            Projects Completed
-                          </h4>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {member.projectsList.map((project, projectIndex) => (
-                              <div key={projectIndex} className="flex items-start gap-2 p-3 rounded-lg bg-gradient-to-br from-white/5 to-white/2 border border-[#d4af37]/10">
-                                <Shield className="w-4 h-4 text-[#d4af37] mt-1 flex-shrink-0" />
-                                <span className="text-sm text-gray-300 font-light">{project}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </motion.div>
                 )}

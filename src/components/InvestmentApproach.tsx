@@ -22,7 +22,7 @@ export function InvestmentApproach() {
       title: 'Long-Term Yield',
       description:
         'We focus on assets that provide secure, passive income streams. We are not looking for quick flips; we are building generational wealth.',
-      image: '/h2.jpeg',
+      image: '/p5.jpeg',
       bg: 'from-[#2a2a2a] to-[#3d3d3d]',
       border: 'border-[#d4af37]/20',
       hoverBorder: 'hover:border-[#d4af37]/40',
@@ -164,11 +164,11 @@ export function InvestmentApproach() {
                       <feature.icon className="h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 text-white" />
                     </div>
 
-                    <h3 className={`mb-2 md:mb-3 lg:mb-4 text-lg md:text-xl lg:text-2xl font-serif font-semibold ${feature.textColor}`}>
+                    <h3 className="mb-2 md:mb-3 lg:mb-4 text-lg md:text-xl lg:text-2xl font-serif font-semibold text-white transition-all duration-500 md:group-hover:text-black md:group-hover:font-bold md:group-hover:drop-shadow-sm">
                       {feature.title}
                     </h3>
 
-                    <p className={`${feature.textColor}/90 font-light leading-relaxed text-sm md:text-base`}>
+                    <p className="text-white/90 font-light leading-relaxed text-sm md:text-base transition-all duration-500 md:group-hover:text-gray-900 md:group-hover:font-medium md:group-hover:drop-shadow-sm">
                       {feature.description}
                     </p>
                   </div>
