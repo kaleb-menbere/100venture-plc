@@ -31,7 +31,7 @@ export function Footer() {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#d4af37] to-[#f7ef8a] rounded-full blur opacity-20"></div>
                 <img
-                  src="/100_Vebture_Logo_(2).png"
+                  src="/100wv.png"
                   alt="Hundred Venture PLC"
                   className="relative h-10 md:h-12 w-auto"
                 />
@@ -60,7 +60,7 @@ export function Footer() {
               {/* Logo with gradient overlay */}
               <div className="relative">
                 <img
-                  src="/100_Vebture_Logo.png"
+                  src="/100wv.png"
                   alt="Hundred Venture PLC Logo"
                   className="relative h-50 md:h-40 w-auto opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
                 />

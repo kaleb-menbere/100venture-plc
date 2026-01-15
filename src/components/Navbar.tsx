@@ -102,7 +102,7 @@ export function Navbar() {
           <div className="relative">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#d4af37] to-[#f7ef8a] blur opacity-30 group-hover:opacity-60 transition" />
             <img
-              src="/100_Vebture_Logo_(2).png"
+              src="/100wv.png"
               className="relative h-9 w-auto group-hover:scale-105 transition"
               alt="Hundred Venture"
             />
@@ -135,13 +135,17 @@ export function Navbar() {
               </button>
             );
           })}
-
-          <Button
-            onClick={() => scrollTo('#contact')}
-            className="bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] text-gray-900 font-semibold px-6 py-2"
-          >
-            Partner With Us
-          </Button>
+<Button
+  variant="secondary"
+  onClick={() =>
+    document
+      .getElementById('contact')
+      ?.scrollIntoView({ behavior: 'smooth' })
+  }
+  className="bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] text-gray-900 hover:brightness-110 hover:shadow-lg shadow-md transition-all duration-300 font-semibold"
+>
+  Partner With Us
+</Button>
         </div>
 
         {/* Mobile Button */}

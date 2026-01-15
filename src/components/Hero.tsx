@@ -47,9 +47,9 @@ export function Hero() {
             <h1 className="text-6xl lg:text-7xl font-serif font-semibold text-white leading-[1.1] mb-8">
               Secure, Passive Income Through{' '}
               <span className="relative">
-                <span className="relative z-10 italic font-normal bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] bg-clip-text text-transparent">
-                  Strategic Partnerships
-                </span>
+              <span className="relative z-10 italic font-normal bg-gradient-to-r from-[#00703D] 50%, to-[#B29711] 50% bg-clip-text text-transparent">
+                Strategic Partnerships
+              </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] opacity-30 blur-xl"></span>
               </span>
             </h1>

@@ -218,16 +218,19 @@ export function ContactSection() {
                     />
                   </div>
 
-                  {/* Submit Button */}
-                  <div className="relative group/btn">
-                    <div className="absolute -inset-0.5 md:-inset-1 bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] rounded-lg md:rounded-xl blur opacity-40 group-hover/btn:opacity-60 transition-all duration-300"></div>
-                    <Button 
-                      type="submit" 
-                      className="relative w-full bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] text-gray-900 hover:brightness-110 hover:shadow-xl border-0 shadow-lg transition-all duration-300 font-semibold text-sm md:text-base py-3 md:py-4"
-                    >
-                      Send Inquiry
-                    </Button>
-                  </div>
+
+{/* Submit Button */}
+<div className="relative group/btn w-full">
+  <div className="absolute -inset-0.5 md:-inset-1 bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] rounded-lg md:rounded-xl blur opacity-30 group-hover/btn:opacity-0 transition-opacity duration-300"></div>
+  <div className="absolute -inset-0.5 md:-inset-1 bg-gradient-to-r from-[#00703D] via-[#B29711] to-[#00703D] rounded-lg md:rounded-xl blur opacity-0 group-hover/btn:opacity-50 transition-opacity duration-300"></div>
+  <Button 
+    type="submit" 
+    className="relative w-full overflow-hidden bg-gradient-to-r from-[#d4af37] via-[#f7ef8a] to-[#d4af37] text-gray-900 hover:bg-gradient-to-r hover:from-[#00703D] hover:via-[#B29711] hover:to-[#00703D] hover:text-white hover:brightness-110 hover:shadow-lg shadow-md transition-all duration-300 font-semibold text-sm px-6 py-2.5 group/button"
+  >
+    <span className="relative z-10">Send Inquiry</span>
+    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover/button:opacity-100 transition-opacity duration-300"></span>
+  </Button>
+</div>
 
                   {/* Privacy Note */}
                   <p className="text-center text-xs md:text-sm text-gray-400 font-light pt-2">
